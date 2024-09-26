@@ -3,7 +3,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #D8C5A7;
 }
 
 /* Smaller header styling */
@@ -12,7 +12,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #2e69ab;
+    background-color: #1D2D3E;
     color: white;
     padding: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -27,7 +27,7 @@ header {
 }
 
 .profile img {
-    width: 120px; 
+    width: 120px;
     height: 160px;
     object-fit: cover;
     border-radius: 10px;
@@ -42,12 +42,12 @@ header {
 
 .profile h1 {
     margin: 0;
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
 }
 
 /* Navigation below the header */
 nav {
-    background-color: black;
+    background-color: #212121;
     width: 100%;
     text-align: center;
     padding: 10px 0;
@@ -79,16 +79,15 @@ nav a {
 
 /* Hover effect to make only the text glow */
 nav a:hover {
-    color: yellow;
+    color: #D73D2A;
 }
-
 
 /* Main layout with grid */
 main {
     display: grid;
-    grid-template-columns: 3fr 1fr; 
-    grid-template-rows: auto auto; 
-    grid-gap: 20px; 
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: 20px auto;
@@ -96,7 +95,7 @@ main {
 
 /* General styling for all sections */
 .course-work, .location, .certificate {
-    background-color: white; 
+    background-color: #FAF3E0;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
@@ -104,8 +103,8 @@ main {
 
 /* Header styling for each section */
 .course-work h2, .location h2, .certificate h2 {
-    background-color: #003366; 
-    color: white; 
+    background-color: #1D2D3E;
+    color: white;
     text-align: center;
     padding: 10px;
     border-radius: 5px;
@@ -116,7 +115,7 @@ main {
 /* Course Work Section */
 .course-work {
     grid-column: 1 / 2;
-    grid-row: 1; 
+    grid-row: 1;
 }
 
 /* Sao Paulo, Brazil Section */
@@ -155,14 +154,14 @@ main {
 .filter-buttons button {
     padding: 10px 20px;
     border: none;
-    background-color: black;
+    background-color: #212121;
     color: white;
     cursor: pointer;
     border-radius: 4px;
 }
 
 .filter-buttons button:hover {
-    background-color: #444;
+    background-color: #D73D2A;
 }
 
 /* Course grid in Certificate section */
@@ -174,23 +173,23 @@ main {
 
 .course {
     padding: 10px;
-    background-color: #613F28;
+    background-color: #8B4513;
     color: white;
     border-radius: 5px;
     text-align: center;
 }
 
 .course.wdd {
-    background-color: #8B4513;
+    background-color: #8B4513; 
 }
 
 .course:hover {
-    background-color: #a55239;
+    background-color: #F4D0B1;
 }
 
 /* Footer */
 footer {
-    background-color: #002D62;
+    background-color: #1D2D3E;
     color: white;
     text-align: center;
     padding: 20px;
@@ -210,7 +209,7 @@ footer p {
     }
 
     .certificate {
-        grid-column: 1 / 2; 
+        grid-column: 1 / 2;
     }
 
     .course-work, .location {
