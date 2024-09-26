@@ -20,6 +20,7 @@
             <h1>Levi Jost Martins</h1>
         </div>
     </header>
+
     <button class="hamburger" id="hamburger">&#9776;</button>
     <nav id="nav-links">
         <ul>
@@ -45,17 +46,18 @@
             <img src="images/Sao-paulo.png" alt="Building">
         </section>
     
-        <section class="certificate">
-            <h2>Web and Computer Programming Certificate</h2>
-            <div class="filter-buttons">
-                <button id="all">All</button>
-                <button id="cse">CSE</button>
-                <button id="wdd">WDD</button>
-            </div>
-            <div class="courses"></div>
-        </section>
-        
-        <script src="scripts/courses.js" defer></script>
+<section class="certificate">
+  <h2>Web and Computer Programming Certificate</h2>
+  <div class="filter-buttons">
+    <button id="all">All</button>
+    <button id="cse">CSE</button>
+    <button id="wdd">WDD</button>
+  </div>
+  <div class="courses"></div>
+  <div id="total-credits" style="font-size: 1.2rem; margin-top: 10px;">Total Credits: 0</div>
+  <div id="selected-course-details" style="margin-top: 20px; font-size: 1.2rem;"></div>
+</section>
+
         
     </main>
 
@@ -63,6 +65,7 @@
         <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
         <p id="lastModified"></p>
         <script src="scripts/getdate.js" defer></script>
+        <script src="scripts/courses.js" defer></script>
         <script src="scripts/hamburger.js" defer></script>
     </footer>
     
