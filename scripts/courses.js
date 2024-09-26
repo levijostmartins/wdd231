@@ -1,4 +1,3 @@
-// File: scripts/courses.js
 const courses = [
     { code: 'CSE 110', category: 'cse' },
     { code: 'WDD 130', category: 'wdd' },
@@ -27,7 +26,6 @@ const courses = [
   document.getElementById('all').addEventListener('click', () => renderCourses('all'));
   document.getElementById('cse').addEventListener('click', () => renderCourses('cse'));
   document.getElementById('wdd').addEventListener('click', () => renderCourses('wdd'));
-  
-  // Initial render
+
   document.addEventListener('DOMContentLoaded', () => renderCourses());
   

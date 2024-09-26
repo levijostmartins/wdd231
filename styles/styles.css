@@ -82,6 +82,22 @@ nav a:hover {
     color: #D73D2A;
 }
 
+/* Basic styles for the hamburger button */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+
+
 /* Main layout with grid */
 main {
     display: grid;
@@ -199,41 +215,4 @@ footer {
 
 footer p {
     margin: 5px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    main {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto;
-    }
-
-    .certificate {
-        grid-column: 1 / 2;
-    }
-
-    .course-work, .location {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .courses {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .profile {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .profile img {
-        margin-bottom: 10px;
-    }
 }

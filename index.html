@@ -6,6 +6,9 @@
     <title>Levi Jost Martins Portfolio</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive-home-page.css">
+    <meta name="author" content="Levi Jost Martins">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Levi Jost Martins">
 </head>
 <body>
     <header>
@@ -14,8 +17,8 @@
             <h1>Levi Jost Martins</h1>
         </div>
     </header>
-    
-    <nav>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+    <nav id="nav-links">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Chamber</a></li>
@@ -57,6 +60,7 @@
         <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
         <p id="lastModified"></p>
         <script src="scripts/getdate.js" defer></script>
+        <script src="scripts/hamburger.js" defer></script>
     </footer>
     
 </body>
