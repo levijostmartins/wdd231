@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta property="og:title" content="Levi Jost Martins">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://levijostmartins.github.io/wdd231/images/Sao-paulo.png">    
+    <meta property="og:url" content="https://levijostmartins.github.io/wdd231/"> 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Levi Jost Martins</title>
@@ -12,6 +17,7 @@
     <link rel="stylesheet" href="styles/responsive-home-page.css">
     <meta name="author" content="Levi Jost Martins">
     <meta name="description" content="WDD 231 - Web Frontend Development I - Levi Jost Martins">
+    <link rel="icon" href="images/favicon.webp">
 </head>
 <body>
     <header>
@@ -46,17 +52,18 @@
             <img src="images/Sao-paulo.png" alt="Building">
         </section>
     
-<section class="certificate">
-  <h2>Web and Computer Programming Certificate</h2>
-  <div class="filter-buttons">
-    <button id="all">All</button>
-    <button id="cse">CSE</button>
-    <button id="wdd">WDD</button>
-  </div>
-  <div class="courses"></div>
-  <div id="total-credits" style="font-size: 1.2rem; margin-top: 10px;">Total Credits: 0</div>
-  <div id="selected-course-details" style="margin-top: 20px; font-size: 1.2rem;"></div>
-</section>
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div class="filter-buttons">
+              <button id="all">All</button>
+              <button id="cse">CSE</button>
+              <button id="wdd">WDD</button>
+            </div>
+            <div class="courses"></div>
+            <div id="total-credits" style="font-size: 1.2rem; margin-top: 10px;">Total Credits: 0</div>
+          
+            <dialog id="course-details"></dialog>
+          </section>          
 
         
     </main>

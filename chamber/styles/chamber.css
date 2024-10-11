@@ -1,0 +1,215 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #D8C5A7; 
+    color: #212121; 
+}
+
+h1 {
+    color: white;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #1D2D3E;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* Menu Links for Large Screens */
+ul.menuLinks {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+}
+
+ul.menuLinks li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+}
+
+ul.menuLinks li a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Hide the Hamburger Button on Large Screens */
+#myButton {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    background-color: #212121;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #D73D2A;
+}
+
+/* Main Content */
+main {
+    padding: 0 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #1D2D3E;
+}
+
+/* Info Section - Events, Current Weather, Weather Forecast */
+.info-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-bottom: 30px; 
+}
+
+.info-section > div {
+    flex: 1; 
+    background-color: #FAF3E0;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h3 {
+    background-color: #333; 
+    color: white;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+/* Business Spotlight Section */
+.business-spotlight {
+    margin-top: 20px;
+}
+
+#member-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.member-card {
+    background-color: #8B4513;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    width: 100%; 
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 50%;
+}
+
+.member-card h3 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.member-card p {
+    color: white;
+    margin: 5px 0;
+}
+
+.member-card a {
+    color: #D73D2A;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.member-card a:hover {
+    text-decoration: underline;
+}
+
+/* Hover effect on card */
+.member-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Styles for List View */
+.list-view .member-card {
+    display: flex;
+    align-items: center;
+    max-width: 100%; 
+    padding: 15px;
+    gap: 20px;
+}
+
+.list-view .member-card img {
+    width: 80px; 
+    height: 80px;
+}
+
+.list-view .member-card h3 {
+    font-size: 1.2rem;
+}
+
+
+/* Footer */
+footer {
+    background-color: #1D2D3E; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer .footer-content p, .footer-dev-info p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+

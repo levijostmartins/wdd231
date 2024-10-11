@@ -20,6 +20,19 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.profile img {
+    animation: slideInFromLeft 2s ease-out forwards; 
+}
+
 .profile {
     display: flex;
     align-items: center;
@@ -218,3 +231,37 @@ footer {
 footer p {
     margin: 5px;
 }
+
+/* Modal Dialog Styling */
+dialog {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  /* Backdrop styling */
+  ::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Close button for the modal */
+  dialog button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0.5rem;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  dialog button:hover {
+    background-color: #D73D2A;
+    color: white;
+  }
+  

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Sao Paulo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://levijostmartins.github.io/wdd231/images/Sao-paulo.png">
+    <meta name="description" content="Sao Paulo Chamber of Commerce: Discover local businesses, events, and weather.">
+    <meta name="author" content="Levi Jost Martins">
+    <title>Sao Paulo Chamber of Commerce</title>
+
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-responsive.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/Sao-paulo.png" alt="Sao Paulo Chamber of Commerce Logo">
+            <h1>Sao Paulo Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <!-- Hamburger Button for Mobile -->
+            <button id="myButton">&#9776;</button>
+            <ul class="menuLinks" id="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="../images/hero.jpeg" alt="Scalable Hero Image" class="hero-image">
+        <button class="cta-button">Keynote Tickets</button>
+    </section>
+
+    <!-- Main Content Section -->
+<!-- Main Content Section -->
+<main>
+    <h2>Home</h2>
+
+    <div class="info-section">
+        <div class="events">
+            <h3>Events</h3>
+            <!-- Event content -->
+        </div>
+        <div class="current-weather">
+            <h3>Current Weather</h3>
+            <!-- Weather content -->
+        </div>
+        <div class="weather-forecast">
+            <h3>Weather Forecast</h3>
+            <!-- Forecast content -->
+        </div>
+    </div>
+    <h2>Business Spotlight</h2>
+
+    <!-- Business Spotlight Section -->
+    <section id="business-spotlight" class="business-spotlight">
+        <!-- Add this div where the cards will be inserted -->
+        <div id="member-container"></div>
+    </section>
+</main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Sao Paulo Chamber of Commerce</p>
+            <p>Email: info@saopaulocc.org | Phone: (223) 555-2300</p>
+        </div>
+        <div class="social-media">
+            <a href="#" aria-label="YouTube"><img src="../images/icon-youtube.png" alt="YouTube"></a>
+            <a href="#" aria-label="Twitter"><img src="../images/icon-twitter.png" alt="Twitter"></a>
+            <a href="#" aria-label="LinkedIn"><img src="../images/icon-linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="footer-dev-info">
+            <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+     <!-- JS Links -->
+     <script src="scripts/getdate.js"></script>
+     <script src="scripts/fetchMembers.js"></script>
+     <script src="scripts/hamburgerToggle.js"></script>
+</body>
+</html>

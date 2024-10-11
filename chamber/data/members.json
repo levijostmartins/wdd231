@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Perola",
+        "address": "R. José Antônio Coelho, 552 - Vila Mariana, São Paulo - SP, 04011-061",
+        "phone": "(11) 5083-9878",
+        "website": "http://peroladavilamariana.com.br/menu",
+        "image": "perola.png",
+        "membership": 3
+    },
+    {
+        "name": "Bar Casa na Praia",
+        "address": "R. Dr. Amâncio de Carvalho, 329 - Vila Mariana, São Paulo - SP, 04012-090",
+        "phone": "(11) 5082-5002",
+        "website": "barcasanapraia.com.br",
+        "image": "praia.jpg",
+        "membership": 2
+    },
+    {
+        "name": "TastelT Restaurante",
+        "address": "Rua Joinville, 515 - Vila Mariana, São Paulo - SP, 04008-001",
+        "phone": "(11) 5088-4000",
+        "website": "https://livemenu.app/menu/5cae299222db8f849ea3c1ab",
+        "image": "tastel.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Wanderlust Bar & Cozinha",
+        "address": "R. da Consolação, 204 - República, São Paulo - SP, 01040-000",
+        "phone": "(11) 3255-0804",
+        "website": "https://wanderlust.goomer.app/menu?retry=true",
+        "image": "wanderlust.jpg",
+        "membership": 2
+    },
+    {
+        "name": "Academia da Gula",
+        "address": "Rua: Caravelas, 374 - Vila Mariana, São Paulo - SP, 04008-011",
+        "phone": "(11) 5572-2571",
+        "website": "academiadagula.com",
+        "image": "acad.jpg",
+        "membership": 3
+    },
+    {
+        "name": "Balcón",
+        "address": "R. França Pinto, 591 - Vila Mariana, São Paulo - SP, 04016-03",
+        "phone": "(11) 97523-8619",
+        "website": "https://www.ifood.com.br/delivery/sao-paulo-sp/balcon--vila-mariana-vila-mariana/25ae6085-24cc-43f3-8a08-6aeb00e420f9?utm_medium=share",
+        "image": "balcon.jpg",
+        "membership": 1
+    },
+    {
+        "name": "Paella Rio-Sampa",
+        "address": "R. Pelotas, 299 - Vila Mariana, São Paulo - SP, 04012-000",
+        "phone": "(11) 97584-6917",
+        "website": "http://places.singleplatform.com/paella-rio-sampa/menu?ref=google",
+        "image": "rio.jpg",
+        "membership": 2
+    }
+]
