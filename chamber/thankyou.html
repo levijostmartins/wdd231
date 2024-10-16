@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Sao Paulo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-responsive.css">
+    <link rel="stylesheet" href="styles/form.css"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/Sao-paulo.png" alt="Sao Paulo Chamber of Commerce Logo">
+            <h1>Sao Paulo Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="myButton">&#9776;</button>
+            <ul class="menuLinks" id="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Thank You for Joining!</h2>
+        <p>We appreciate your interest in becoming a member of the Sao Paulo Chamber of Commerce. Below is a summary of your information:</p>
+
+        <div class="form-summary">
+            <p><strong>First Name:</strong> <span id="firstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="lastName"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Organization:</strong> <span id="organization"></span></p>
+            <p><strong>Membership Level:</strong> <span id="membership"></span></p>
+            <p><strong>Submission Date:</strong> <span id="timestamp"></span></p>
+        </div>
+
+        <a href="index.html" class="cta-button">Return to Home</a>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Sao Paulo Chamber of Commerce</p>
+            <p>Email: info@saopaulocc.org | Phone: (223) 555-2300</p>
+        </div>
+        <div class="footer-dev-info">
+            <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="scripts/getdate.js"></script> 
+    <script src="scripts/thankYou.js"></script>
+</body>
+</html>

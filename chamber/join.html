@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Sao Paulo Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-responsive.css">
+    <link rel="stylesheet" href="styles/form.css"> <!-- New styles for the form and modals -->
+</head>
+<body>
+    <!-- Header Section (shared across pages) -->
+    <header>
+        <div class="logo">
+            <img src="../images/Sao-paulo.png" alt="Sao Paulo Chamber of Commerce Logo">
+            <h1>Sao Paulo Chamber of Commerce</h1>
+        </div>
+        <nav>
+            <button id="myButton">&#9776;</button> <!-- Hamburger for mobile -->
+            <ul class="menuLinks" id="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <h2>Join the Chamber of Commerce</h2>
+
+        <!-- Membership Form -->
+        <section class="form-section">
+            <form method="GET" action="thankyou.html">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" title="First Name" autocomplete="given-name" required>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" title="Last Name" autocomplete="family-name" required>
+
+                <label for="organizationTitle">Organizational Title</label>
+                <input type="text" id="organizationTitle" name="organizationTitle" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" placeholder="e.g., Manager" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" title="Email" autocomplete="email" placeholder="yourname@example.com" required>
+
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" title="Phone" autocomplete="tel" required>
+
+                <label for="organization">Business/Organization Name</label>
+                <input type="text" id="organization" name="organization" title="Organization" autocomplete="organization" required>
+
+                <!-- Membership Level Dropdown -->
+                <label for="membership">Membership Level</label>
+                <select id="membership" name="membership" required>
+                    <option value="NP">NP Membership - Non-Profit</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description" title="Description"></textarea>
+
+                <!-- Timestamp (hidden field) -->
+                <input type="hidden" id="timestamp" name="timestamp">
+
+                <!-- Submit Button -->
+                <input type="submit" value="Submit Application">
+            </form>
+        </section>
+
+        <!-- Membership Level Cards -->
+        <section class="membership-cards">
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button type="button" onclick="showModal('bronze-modal')">Learn More</button>
+            </div>
+
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <button type="button" onclick="showModal('silver-modal')">Learn More</button>
+            </div>
+
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <button type="button" onclick="showModal('gold-modal')">Learn More</button>
+            </div>
+
+            <div class="card" id="np-card">
+                <h3>NP Membership</h3>
+                <button type="button" onclick="showModal('np-modal')">Learn More</button>
+            </div>
+        </section>
+
+        <!-- Modals for Membership Info -->
+        <div id="bronze-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('bronze-modal')">&times;</span>
+                <h2>Bronze Membership</h2>
+                <p>Benefits: Basic listing, discounts at events.</p>
+            </div>
+        </div>
+
+        <div id="silver-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('silver-modal')">&times;</span>
+                <h2>Silver Membership</h2>
+                <p>Benefits: Advanced listing, free events, spotlight feature on website.</p>
+            </div>
+        </div>
+
+        <div id="gold-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('gold-modal')">&times;</span>
+                <h2>Gold Membership</h2>
+                <p>Benefits: Premium listing, event sponsorships, exclusive marketing opportunities.</p>
+            </div>
+        </div>
+
+        <div id="np-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('np-modal')">&times;</span>
+                <h2>NP Membership</h2>
+                <p>Benefits: Free membership for non-profits, basic listing.</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Sao Paulo Chamber of Commerce</p>
+            <p>Email: info@saopaulocc.org | Phone: (223) 555-2300</p>
+        </div>
+        <div class="footer-dev-info">
+            <p><span id="currentyear"></span> &copy; Levi Jost Martins 🐈‍⬛ Brazil</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/fetchMembers.js"></script>
+    <script src="scripts/hamburgerToggle.js"></script>
+    <script src="scripts/joinForm.js"></script> 
+</body>
+</html>

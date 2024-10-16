@@ -112,4 +112,13 @@
         margin-bottom: 10px;
     }
 
+    .membership-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .membership-cards .card {
+        width: 100%; 
+    }
+
 }
