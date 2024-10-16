@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- SEO and Social Sharing Metadata -->
     <meta property="og:title" content="Sao Paulo Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://levijostmartins.github.io/wdd231/images/Sao-paulo.png">
-    <meta name="description" content="Sao Paulo Chamber of Commerce: Discover local businesses, events, and weather.">
+    <meta name="description" content="Sao Paulo Chamber of Commerce: Connect with local businesses, discover events, and stay updated with the weather. Join us today!">
     <meta name="author" content="Levi Jost Martins">
-    <title>Sao Paulo Chamber of Commerce</title>
+    
+    <title>Sao Paulo Chamber of Commerce - Home</title>
 
     <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
@@ -17,14 +19,14 @@
     <link rel="stylesheet" href="styles/chamber-responsive.css">
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <div class="logo">
             <img src="../images/Sao-paulo.png" alt="Sao Paulo Chamber of Commerce Logo">
             <h1>Sao Paulo Chamber of Commerce</h1>
         </div>
         <nav>
-            <!-- Hamburger Button for Mobile -->
-            <button id="myButton">&#9776;</button>
+            <button id="myButton">&#9776;</button> <!-- Hamburger for mobile -->
             <ul class="menuLinks" id="menuLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
@@ -36,38 +38,39 @@
     
     <!-- Hero Section -->
     <section class="hero">
-        <img src="../images/hero.jpeg" alt="Scalable Hero Image" class="hero-image">
-        <button class="cta-button">Keynote Tickets</button>
+        <img src="../images/hero.jpeg" alt="Scenic view of Sao Paulo" class="hero-image">
+        <div class="hero-content">
+            <h2>Empowering Local Businesses</h2>
+            <p>Join the Sao Paulo Chamber of Commerce and connect with like-minded entrepreneurs!</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a> <!-- Call to Action -->
+        </div>
     </section>
 
     <!-- Main Content Section -->
-<!-- Main Content Section -->
-<main>
-    <h2>Home</h2>
+    <main>
+        <h2>Welcome to the Chamber of Commerce</h2>
 
-    <div class="info-section">
-        <div class="events">
-            <h3>Events</h3>
-            <!-- Event content -->
-        </div>
-        <div class="current-weather">
-            <h3>Current Weather</h3>
-            <!-- Weather content -->
-        </div>
-        <div class="weather-forecast">
-            <h3>Weather Forecast</h3>
-            <!-- Forecast content -->
-        </div>
-    </div>
-    <h2>Business Spotlight</h2>
+        <!-- Events and Weather Section -->
+        <section class="info-section">
+            <div class="events">
+                <h3>Upcoming Events</h3>
+                <!-- Event content placeholder -->
+                <p>Stay tuned for upcoming networking events and business workshops.</p>
+            </div>
+            <div class="weather">
+                <h3>Current Weather</h3>
+                <div class="current-weather"></div>
+                <div class="weather-forecast"></div>
+            </div>
+        </section>
 
-    <!-- Business Spotlight Section -->
-    <section id="business-spotlight" class="business-spotlight">
-        <!-- Add this div where the cards will be inserted -->
-        <div id="member-container"></div>
-    </section>
-</main>
-
+        <!-- Business Spotlight Section -->
+        <section id="business-spotlight" class="business-spotlight">
+            <h2>Business Spotlights</h2>
+            <!-- Cards dynamically populated from the JSON data -->
+            <div id="member-container"></div> <!-- The JS script will populate this section -->
+        </section>
+    </main>
 
     <!-- Footer Section -->
     <footer>
@@ -86,9 +89,10 @@
         </div>
     </footer>
 
-     <!-- JS Links -->
-     <script src="scripts/getdate.js"></script>
-     <script src="scripts/fetchMembers.js"></script>
-     <script src="scripts/hamburgerToggle.js"></script>
+    <!-- JS Scripts -->
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/weather.js"></script> <!-- Weather fetching from OpenWeatherMap API -->
+    <script src="scripts/fetchMembers.js"></script> <!-- Fetches member data for spotlight from JSON -->
+    <script src="scripts/hamburgerToggle.js"></script>
 </body>
 </html>

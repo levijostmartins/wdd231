@@ -67,5 +67,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         fetchMembers(viewType);
         toggleButton.textContent = isListView ? 'Switch to Grid View' : 'Switch to List View';
     });
+
+    // Initial fetch of members in grid view
     fetchMembers();
 });
