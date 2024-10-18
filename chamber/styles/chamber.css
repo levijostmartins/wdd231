@@ -408,39 +408,6 @@ form textarea:focus {
     color: #333;
 }
 
-/* Form Summary Section */
-.form-summary {
-    background-color: #FAF3E0;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.form-summary p {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-/* CTA Button */
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background-color: #1D2D3E;
-    color: white;
-    font-size: 1.2rem;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #D73D2A;
-}
-
 
 /* Wider member cards for desktop */
 @media (min-width: 1024px) {
