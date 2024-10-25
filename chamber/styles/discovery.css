@@ -1,0 +1,69 @@
+/* Main layout with grid */
+.discover-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    display: grid;
+    gap: 20px;
+}
+
+.sidebar section {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+/* Border for calendar */
+.calendar {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Gallery styling */
+.gallery {
+    border: 1px solid #ccc; /* Border around the entire gallery */
+    padding: 15px;
+    display: grid;
+    gap: 20px;
+    background-color: #f9f9f9;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Popup message */
+.popup-message {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    z-index: 1000;
+}
+
+
+/* Hover effect for images */
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .discover-layout {
+        grid-template-columns: 1fr;
+    }
+}

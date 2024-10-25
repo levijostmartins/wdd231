@@ -120,4 +120,7 @@
         width: 100%; 
     }
 
+    .discover-layout {
+        grid-template-columns: 1fr;
+    }
 }
