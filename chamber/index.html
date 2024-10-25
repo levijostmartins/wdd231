@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-        <!-- SEO and Social Sharing Metadata -->
-        <meta property="og:title" content="Sao Paulo Chamber of Commerce: Discovery">
-        <meta property="og:type" content="website">
-        <meta property="og:url" content="https://levijostmartins.github.io/wdd231/chamber/discover.html"> 
-        <meta property="og:image" content="https://levijostmartins.github.io/wdd231/chamber/images/Sao-paulo.png">
-        <meta name="description" content="Sao Paulo Chamber of Commerce: Connect with local businesses, discover events, and stay updated with the weather.">
-        <meta name="author" content="Levi Jost Martins">
+    <!-- SEO and Social Sharing Metadata -->
+    <meta property="og:title" content="Sao Paulo Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://levijostmartins.github.io/wdd231/chamber/index.html"> 
+    <meta property="og:image" content="https://levijostmartins.github.io/wdd231/chamber/images/Sao-paulo.png">
+    <meta name="description" content="Sao Paulo Chamber of Commerce: Connect with local businesses, discover events, and stay updated with the weather. Join us today!">
+    <meta name="author" content="Levi Jost Martins">
     
-        <title>Discover Sao Paulo Chamber of Commerce</title>
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/chamber.css">
-        <link rel="stylesheet" href="styles/chamber-responsive.css">
-        <link rel="stylesheet" href="styles/discovery.css">
-        <link rel="icon" href="images/favicon.webp">
-    </head>
-    
+    <title>Sao Paulo Chamber of Commerce - Home</title>
+
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-responsive.css">
+    <link rel="icon" href="images/favicon.webp">
+
+</head>
 <body>
     <!-- Header Section -->
     <header>
@@ -37,26 +38,40 @@
             </ul>
         </nav>
     </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <img src="../images/hero.jpeg" alt="Scenic view of Sao Paulo" class="hero-image">
+        <div class="hero-content">
+            <h2>Empowering Local Businesses</h2>
+            <p>Join the Sao Paulo Chamber of Commerce and connect with like-minded entrepreneurs!</p>
+            <a href="join.html" class="cta-button">Join the Chamber</a> <!-- Call to Action -->
+        </div>
+    </section>
 
     <!-- Main Content Section -->
-    <main class="discover-layout">
-        <aside class="sidebar">
-            <section id="visitor-message"></section>
-            <section>
-                <h2>Events & Information</h2>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <!-- Add more information here -->
-            </section>
-            <section class="calendar">
-                <h2>Calendar</h2>
-                <div> <!-- Example calendar structure --> </div>
-            </section>
-        </aside>
-        <section class="gallery">
-            <h2>Photo Gallery</h2>
-            <img src="images/photo1.jpg" alt="Photo 1" loading="lazy">
-            <img src="images/photo2.jpg" alt="Photo 2" loading="lazy">
-            <!-- Add more images with lazy loading -->
+    <main>
+        <h2>Welcome to the Chamber of Commerce</h2>
+
+        <!-- Events and Weather Section -->
+        <section class="info-section">
+            <div class="events">
+                <h3>Upcoming Events</h3>
+                <!-- Event content placeholder -->
+                <p>Stay tuned for upcoming networking events and business workshops.</p>
+            </div>
+            <div class="weather">
+                <h3>Current Weather</h3>
+                <div class="current-weather"></div>
+                <div class="weather-forecast"></div>
+            </div>
+        </section>
+
+        <!-- Business Spotlight Section -->
+        <section id="business-spotlight" class="business-spotlight">
+            <h2>Business Spotlights</h2>
+            <!-- Cards dynamically populated from the JSON data -->
+            <div id="member-container"></div> <!-- The JS script will populate this section -->
         </section>
     </main>
 
@@ -79,11 +94,8 @@
 
     <!-- JS Scripts -->
     <script src="scripts/getdate.js"></script>
-    <script src="scripts/weather.js"></script>
-    <script src="scripts/fetchMembers.js"></script>
+    <script src="scripts/weather.js"></script> <!-- Weather fetching from OpenWeatherMap API -->
+    <script src="scripts/fetchMembers.js"></script> <!-- Fetches member data for spotlight from JSON -->
     <script src="scripts/hamburgerToggle.js"></script>
-    <script src="scripts/visit-date.js"></script> 
-    <script src="scripts/lazyload.js"></script> 
-    
 </body>
 </html>
