@@ -18,6 +18,9 @@
         <link rel="stylesheet" href="styles/chamber-responsive.css">
         <link rel="stylesheet" href="styles/discovery.css">
         <link rel="icon" href="images/favicon.webp">
+        <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.css' rel='stylesheet' />
+        <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.6/main.min.js'></script>
+
     </head>
     
 <body>
@@ -46,21 +49,21 @@
         <aside class="sidebar">
             <section>
                 <h2>Events & Information</h2>
-                <p>Lorem ipsum dolor sit amet...</p>
+                <p>Event information to be added here</p>
             </section>
             <section class="calendar">
                 <h2>Calendar</h2>
-                <div> <!-- Example calendar structure --> </div>
-            </section>
+                <div id='calendar'></div>
+            </section>            
         </aside>
         <section class="gallery">
             <h2>Photo Gallery</h2>
-            <img src="images/photo1.jpg" alt="Photo 1" loading="lazy">
-            <img src="images/photo2.jpg" alt="Photo 2" loading="lazy">
-            <img src="images/photo3.jpg" alt="Photo 3" loading="lazy">
-            <img src="images/photo4.jpg" alt="Photo 4" loading="lazy">
-            <img src="images/photo5.jpg" alt="Photo 5" loading="lazy">
-            <img src="images/photo6.jpg" alt="Photo 6" loading="lazy">
+            <img src="images/webminar.webp" alt="webinar" loading="lazy">
+            <img src="images/food-variaty.webp" alt="food variaty" loading="lazy">
+            <img src="images/food-variaty2.webp" alt="food with fruits" loading="lazy">
+            <img src="images/food4.webp" alt="Burger" loading="lazy">
+            <img src="images/food5.webp" alt="Meal" loading="lazy">
+            <img src="images/food6.webp" alt="another Meal" loading="lazy">
         </section>
     </main>
 
@@ -89,5 +92,6 @@
     <script src="scripts/visit-date.js"></script> 
     <script src="scripts/lazyload.js"></script> 
     <script src="scripts/popup.js"></script> 
+    <script src="scripts/calendar.js"></script>
 </body>
 </html>

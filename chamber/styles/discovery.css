@@ -41,6 +41,19 @@
     transition: transform 0.3s ease;
 }
 
+.sidebar {
+    position: sticky;
+    top: 20px; 
+    height: fit-content;
+}
+
+@media (max-width: 1024px) {
+    .sidebar {
+        position: static;
+    }
+}
+
+
 /* Popup message */
 .popup-message {
     position: fixed;
