@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Book Now - Levi Jost Martins Photography</title>
+    <!-- Primary Meta Tags -->
+    <title>Levi Jost Martins - Photography Portfolio</title>
+    <meta name="description" content="Explore the stunning photography portfolio of Levi Jost Martins, a professional photographer based in Sao Paulo.">
+    <meta name="keywords" content="photography portfolio, Levi Jost Martins, photographer, Sao Paulo, portrait, landscape photography">
+    <meta name="author" content="Levi Jost Martins">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://justleview.myportfolio.com">
+    <meta property="og:title" content="Levi Jost Martins - Photography Portfolio">
+    <meta property="og:description" content="Explore the photography portfolio of Levi Jost Martins, based in Sao Paulo.">
+    <meta property="og:image" content="https://cdn.myportfolio.com/ac6dc31c-313c-4b74-ad9e-84fd2cf54533/bc06c528-a54b-4cb4-acbe-1ec50fce1701.JPG?h=c9016c989cfebec7861a430350773e02">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://justleview.myportfolio.com">
+    <meta property="twitter:title" content="Levi Jost Martins - Photography Portfolio">
+    <meta property="twitter:description" content="Explore the photography portfolio of Levi Jost Martins, based in Sao Paulo.">
+    <meta property="twitter:image" content="https://cdn.myportfolio.com/ac6dc31c-313c-4b74-ad9e-84fd2cf54533/bc06c528-a54b-4cb4-acbe-1ec50fce1701.JPG?h=c9016c989cfebec7861a430350773e02">
+        
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
+
+    <!-- Google Calendar Appointment Scheduling -->
+    <link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+    <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
 </head>
 <body>
   <nav class="navbar">
@@ -13,23 +37,46 @@
     <a href="book.html">Book Now!</a>
   </nav>
 
-  <!-- Booking Section with Button -->
+  <!-- Booking Section with Google Appointment Button -->
   <section class="intro">
     <div class="intro-text">
       <h1>Book Your Session</h1>
-      <p>Click below to open the calendar and schedule your preferred date.</p>
-      <button id="openModal" class="book-button">Book Now!</button>
+      <p>Click below to schedule your preferred date directly on Google Calendar.</p>
+      <!-- Google Calendar Appointment Button -->
+      <div id="google-schedule-button"></div>
+      <script>
+        window.addEventListener('load', function() {
+          calendar.schedulingButton.load({
+            url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2_7cZqoCar9jx2-iw4iyzbkNTkJDuZOA6fcqRSVCeaCjLL4SDmEiIiS1Kh8cI96ru0kHiPd289?gv=true',
+            color: '#F6BF26',
+            label: 'Book an appointment',
+            target: document.getElementById('google-schedule-button')
+          });
+        });
+      </script>
     </div>
   </section>
 
-  <!-- Modal Structure -->
-  <div id="calendarModal" class="modal">
-    <div class="modal-content">
-      <iframe src="https://calendar.google.com/calendar/embed?src=b34911c7d5496e790ded6725454b668657f7492b3f0724095bc7e1cc00dd6514%40group.calendar.google.com&ctz=America%2FSao_Paulo" 
-              style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+  <section class="gallery">
+    <div class="gallery-item">
+        <a href="https://justleview.myportfolio.com/wedding" target="_blank">
+            <img data-src="images/wedding.png" alt="Wedding" loading="lazy">
+        </a>
     </div>
-  </div>
+    <div class="gallery-item">
+        <a href="https://justleview.myportfolio.com/people" target="_blank">
+            <img data-src="images/people.jpeg" alt="Birthday" loading="lazy">
+        </a>
+    </div>
+    <div class="gallery-item">
+        <a href="https://justleview.myportfolio.com/gym" target="_blank">
+            <img data-src="images/gym.jpeg" alt="Gym" loading="lazy">
+        </a>
+    </div>
+</section>
 
-  <script src="scripts/modal.js"></script>
+
 </body>
+
+<script src="scripts/lazyload.js"></script>
 </html>

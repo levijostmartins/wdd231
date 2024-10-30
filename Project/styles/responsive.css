@@ -1,0 +1,57 @@
+/* Mobile Navbar centered */
+@media (max-width: 768px) {
+    /* Navbar Display and Positioning */
+    .navbar {
+      display: none;
+      flex-direction: column;
+      align-items: center; /* Center items horizontally */
+      justify-content: center; /* Center items vertically */
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 100vh;
+      animation: slideDown 0.5s ease-out;
+    }
+  
+    /* Navbar Visible State */
+    .navbar.show {
+      display: flex;
+    }  
+  
+    /* Hamburger Menu Icon */
+    .hamburger {
+      display: block;
+      position: fixed;
+      top: 15px;
+      left: 20px;
+      font-size: 1.8rem;
+      color: white;
+      cursor: pointer;
+      z-index: 1001;
+    }
+  
+    /* Show Navbar on Click */
+    .navbar.show {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding-top: 70px;
+      animation: slideDown 0.5s ease-out;
+    }
+  
+    /* One-column Gallery */
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Slide-down Animation */
+  @keyframes slideDown {
+    0% { top: -100%; }
+    100% { top: 0; }
+  }
+  
