@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Now - Levi Jost Martins Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="book.html">Book Now!</a>
+  </nav>
+
+  <!-- Booking Section with Button -->
+  <section class="intro">
+    <div class="intro-text">
+      <h1>Book Your Session</h1>
+      <p>Click below to open the calendar and schedule your preferred date.</p>
+      <button id="openModal" class="book-button">Book Now!</button>
+    </div>
+  </section>
+
+  <!-- Modal Structure -->
+  <div id="calendarModal" class="modal">
+    <div class="modal-content">
+      <iframe src="https://calendar.google.com/calendar/embed?src=b34911c7d5496e790ded6725454b668657f7492b3f0724095bc7e1cc00dd6514%40group.calendar.google.com&ctz=America%2FSao_Paulo" 
+              style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+
+  <script src="scripts/modal.js"></script>
+</body>
+</html>
