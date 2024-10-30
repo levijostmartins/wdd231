@@ -89,6 +89,31 @@ body {
   transform: scale(1.1);
 }
 
+/* Ensure overlay with alt text on hover */
+.gallery-item::before {
+  content: attr(data-alt); /* Display the data-alt text */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  z-index: 1; /* Ensure overlay is above the image */
+}
+
+.gallery-item:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 /* Calendar iframe */
 .calendar iframe {
   width: 100%;
@@ -96,6 +121,11 @@ body {
   height: 600px;
   margin: auto;
   display: block;
+}
+
+/* Google Schedule Button */
+#google-schedule-button {
+  margin-top: 40px; /* Adjust the value as needed */
 }
 
 /* Book Now Button */
